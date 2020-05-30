@@ -4,14 +4,16 @@ import { withStyles } from "@material-ui/core/styles";
 import Button from "../../Components/Modules/Button";
 import Typography from "../../Components/Modules/Typography";
 import Layout from "../../Components/Home/Layout";
+import AppBar from "../../Components/Modules/AppBar";
+
 
 const backgroundImage =
-  "https://cdn.pixabay.com/photo/2020/03/12/20/10/right-4926156_1280.jpg";
+  "https://cdn.pixabay.com/photo/2017/02/12/14/00/justice-2060093_1280.jpg";
 
 const styles = (theme) => ({
   background: {
     backgroundImage: `url(${backgroundImage})`,
-    backgroundColor: "#7fc7d9", // Average color of the background image.
+    backgroundColor: "#7fc7d9", 
     backgroundPosition: "center",
   },
   button: {
@@ -29,42 +31,45 @@ const styles = (theme) => ({
   },
 });
 
-function ProductHero(props) {
+function Capa(props) {
   const { classes } = props;
 
   return (
-    <Layout backgroundClassName={classes.background}>
-      <Typography color="inherit" align="center" variant="h2" marked="center">
-        Manticor
-      </Typography>
-      <Typography
-        color="inherit"
-        align="center"
-        variant="h5"
-        className={classes.h5}
-      >
-        “Obtener justicia al denunciar un acto de corrupción asegurando su
-        integridad.”
-      </Typography>
-      <Button
-        color="secondary"
-        variant="contained"
-        size="large"
-        className={classes.button}
-        component="a"
-        href="Formulario"
-      >
-        DENUNCIA
-      </Button>
-      <Typography variant="body2" color="inherit" className={classes.more}>
-        Descubre la experiencia
-      </Typography>
-    </Layout>
+    <div>
+      <AppBar />
+      <Layout backgroundClassName={classes.background}>
+        <Typography color="inherit" align="center" variant="h2" marked="center">
+          Manticor
+        </Typography>
+        <Typography
+          color="inherit"
+          align="center"
+          variant="h5"
+          className={classes.h5}
+        >
+          “Obtener justicia al denunciar un acto de corrupción asegurando su
+          integridad.”
+        </Typography>
+        <Button
+          color="secondary"
+          variant="contained"
+          size="large"
+          className={classes.button}
+          component="a"
+          href="Formulario"
+        >
+          DENUNCIA
+        </Button>
+        <Typography variant="body2" color="inherit" className={classes.more}>
+          Descubre esta nueva experiencia
+        </Typography>
+      </Layout>
+    </div>
   );
 }
 
-ProductHero.propTypes = {
+Capa.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ProductHero);
+export default withStyles(styles)(Capa);
