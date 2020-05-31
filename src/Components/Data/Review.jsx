@@ -38,7 +38,7 @@ const Review = ({ setForm, formData, navigation }) => {
     <div className="form">
       <h3>Revisar tu información</h3>
       <h4>Datos del denunciado</h4>
-      <div>Nick Name: {`${nickName}`}</div>
+      <div>Nickname: {`${nickName}`}</div>
       <div>
         e-mail: {`${email}`},
         <br />

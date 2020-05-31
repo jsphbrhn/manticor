@@ -30,9 +30,9 @@ export default function ButtonAppBar() {
       >
         <Toolbar style={{flexDirection: "row-reverse", backgroundColor: "#f60256"
 }}>
+          <Button color="inherit">Seguimiento</Button>
+          <Button color="inherit">Proceso</Button>
           <Button color="inherit">Objetivos</Button>
-          <Button color="inherit">Proceso de Denuncia</Button>
-          <Button color="inherit">Acerca de Manticor</Button>
         </Toolbar>
       </AppBar>
     </div>

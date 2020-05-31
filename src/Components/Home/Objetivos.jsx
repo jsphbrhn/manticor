@@ -10,9 +10,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexWrap: "wrap",
     "& > *": {
-      margin: theme.spacing(1),
       width: "100%",
-      height: theme.spacing(16),
+      marginTop: "2%"
     },
   },
 }));
@@ -24,17 +23,13 @@ export default function SimplePaper() {
     <div className={classes.root}>
       <section className={classes.root}>
         <Container className={classes.container}>
-          {/* <img
-            src="https://cdn.pixabay.com/photo/2016/06/22/11/10/box-1472804_1280.png"
-            className={classes.curvyLines}
-            alt="curvy lines"
-          /> */}
+         
           <Typography
             variant="h4"
             marked="center"
             className={classes.title}
             component="h2"
-            style={{paddingTop: "2%"}}
+            style={{paddingTop: "2%", marginTop: "20px", marginBottom: "20px"}}
           >
             Objetivos
           </Typography>

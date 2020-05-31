@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { useForm } from "react-hook-form";
 import Formulario from './Formulario';
-
+import AppBar from "../Modules/AppBar"
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -23,6 +23,7 @@ export default function() {
   return (
     <div>
       <div className={classes.root}>
+        <AppBar/>
         <Formulario />
       </div>
     </div>

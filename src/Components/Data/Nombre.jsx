@@ -12,7 +12,7 @@ const Nombres = ({ setForm, formData, navigation }) => {
       <h3>Tu user anónimo</h3>
       <hr></hr>
       <ItemForm
-        label="Nick Name"
+        label="Nickname"
         name="nickName"
         value={nickName}
         onChange={setForm}

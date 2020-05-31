@@ -6,6 +6,7 @@ import Typography from "../../Components/Modules/Typography";
 import Layout from "../../Components/Home/Layout";
 import AppBar from "../../Components/Modules/AppBar";
 import Objetivos from "./Objetivos";
+import Identidad from "./Identidad"
 import { Link } from "react-router-dom";
 
 const backgroundImage =
@@ -65,7 +66,7 @@ function Capa(props) {
           Descubre esta nueva experiencia
         </Typography>
       </Layout>
-
+      <Identidad/>
       <Objetivos />
     </div>
   );
