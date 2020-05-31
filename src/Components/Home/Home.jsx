@@ -6,6 +6,7 @@ import Button from "../../Components/Modules/Button";
 import Typography from "../../Components/Modules/Typography";
 import Layout from "../../Components/Home/Layout";
 import AppBar from "../../Components/Modules/AppBar";
+import Objetivos from "./Objetivos";
 
 const backgroundImage =
   "https://cdn.pixabay.com/photo/2017/02/12/14/00/justice-2060093_1280.jpg";
@@ -64,6 +65,9 @@ function Capa(props) {
           Descubre esta nueva experiencia
         </Typography>
       </Layout>
+    
+       <Objetivos/>
+     
     </div>
   );
 }

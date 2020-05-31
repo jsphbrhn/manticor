@@ -26,13 +26,13 @@ export default function ButtonAppBar() {
   return (
     <div className={classes.root}>
       <AppBar
-        position="static"
+        position="static" 
       >
-        <Toolbar>
-          <Button color="inherit">¿Quiénes Somos?</Button>
+        <Toolbar style={{flexDirection: "row-reverse", backgroundColor: "#f60256"
+}}>
           <Button color="inherit">Objetivos</Button>
           <Button color="inherit">Proceso de Denuncia</Button>
-          <Button color="inherit">Contáctanos</Button>
+          <Button color="inherit">Acerca de Manticor</Button>
         </Toolbar>
       </AppBar>
     </div>
