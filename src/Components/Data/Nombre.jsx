@@ -27,7 +27,7 @@ const Nombres = ({ setForm, formData, navigation }) => {
       />
       <Typography style={{ color: "white" }}>
         <br></br>
-        <b>¡Hola!Permíteme ayudarte </b>
+        <b>¡Hola!<br></br>Permíteme ayudarte </b>
       </Typography>
       <div
         style={{ position: "absolute", bottom: "100px", paddingBottom: "2%", }}

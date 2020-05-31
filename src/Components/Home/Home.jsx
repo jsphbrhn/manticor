@@ -75,7 +75,7 @@ function Capa(props) {
       </Layout>
       <Identidad />
       <Objetivos />
-      <Proceso />
+ 
     </div>
   );
 }

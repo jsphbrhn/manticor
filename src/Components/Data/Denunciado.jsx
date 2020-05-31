@@ -41,12 +41,13 @@ const Denunciado = ({ setForm, formData, navigation }) => {
       <label>Descripción de los hechos</label>
       <TextareaAutosize
         aria-label="empty textarea"
+        rowsMax={4}
         label="Detalle de los hechos"
         name="detalleCrimen"
         value={detalleCrimen}
         onChange={setForm}
       />
-      
+
       {/* <ItemForm
         label="Detalle de los hechos"
         name="detalleCrimen"
