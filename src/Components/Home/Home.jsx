@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Button from "../../Components/Modules/Button";
@@ -6,14 +7,13 @@ import Typography from "../../Components/Modules/Typography";
 import Layout from "../../Components/Home/Layout";
 import AppBar from "../../Components/Modules/AppBar";
 
-
 const backgroundImage =
   "https://cdn.pixabay.com/photo/2017/02/12/14/00/justice-2060093_1280.jpg";
 
 const styles = (theme) => ({
   background: {
     backgroundImage: `url(${backgroundImage})`,
-    backgroundColor: "#7fc7d9", 
+    backgroundColor: "#7fc7d9",
     backgroundPosition: "center",
   },
   button: {
@@ -33,7 +33,7 @@ const styles = (theme) => ({
 
 function Capa(props) {
   const { classes } = props;
-
+  const history = useHistory();
   return (
     <div>
       <AppBar />
@@ -56,7 +56,7 @@ function Capa(props) {
           size="large"
           className={classes.button}
           component="a"
-          href="Formulario"
+          onClick={() => history.push("/formulario")}
         >
           DENUNCIA
         </Button>
