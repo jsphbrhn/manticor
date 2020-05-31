@@ -24,6 +24,9 @@ Este módulo se encuentra dentro de la [Wiki de este repositorio](https://github
 
 ### BACKEND
 
+En el lado del back se han manejado colecciones, se fueron creando 3 en firebase de momento para la demo, pero se planifica utilizar endpoint gubernamentales.
+
+![Usa firebase](https://raw.githubusercontent.com/Mariyselita/Imgs/master/Captura%20de%20Pantalla%202020-05-31%20a%20la(s)%2015.28.29.png)
 
 ### FRONTEND
 
