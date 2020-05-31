@@ -34,7 +34,7 @@ export default function SimplePaper() {
               marginBottom: "20px",
             }}
           >
-            Objetivos
+            Proceso
           </Typography>
 
           <div style={{ paddingTop: "4%" }}>
@@ -46,12 +46,22 @@ export default function SimplePaper() {
                     width="150px"
                     alt="suitcase"
                     className={classes.image}
-                  /><br></br>
-                  <Typography variant="h6" align="center" style={{fontSize: "14px"}}>
-                    Busca un espacio físico seguro: Donde nadie vea lo que haces y te sientas con confianza para proporcionar tu denuncia. <br></br>-
-                    Instala Tor: El navegador Tor permite que puedas realizar tu denuncia con la mayor seguridad posible. <br></br>-Crea un correo electrónico especialmente para tu denuncia en un servicio como
-                    https://protonmail.com/es, para mantener tu anonimato.<br></br> -
-                    Asegúrate de tener a la mano las evidencias digitales.
+                  />
+                  <br></br>
+                  <Typography variant="h6" align="center">
+                    <br></br>Sigue nuestras recomendaciones:
+                  </Typography>
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    style={{ fontSize: "16px", textAlign: "left" }}
+                  ><br></br>
+                    -Busca un espacio físico seguro. <br></br>-Instala Tor, éste
+                    permite que puedas realizar tu denuncia con la mayor
+                    seguridad posible. <br></br>-Crea un mail especial para tu
+                    denuncia en un servicio como https://protonmail.com/es, para
+                    mantener tu anonimato.<br></br> -Asegúrate de tener a la
+                    mano evidencias digitales.
                   </Typography>
                 </div>
               </Grid>
@@ -62,11 +72,20 @@ export default function SimplePaper() {
                     width="140px"
                     alt="graph"
                     className={classes.image}
-                  /><br></br>
+                  />
+                  <br></br>
                   <Typography variant="h6" align="center">
-                    Realiza la denuncia, te preguntaremos: <br></br>• ¿Quién está
-                    involucrado? <br></br>• ¿Dónde sucedió el hecho? • ¿Cuándo ocurrió el
-                    hecho? <br></br>• ¿Qué sucedió?
+                    <br></br>Ingresa a nuestra página:
+                  </Typography>
+                  <br></br>
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    style={{ fontSize: "16px", textAlign: "left" }}
+                  >
+                    Realiza la denuncia, te preguntaremos: <br></br>• ¿Quién
+                    está involucrado? <br></br>• ¿Dónde sucedió el hecho? <br></br>•
+                    ¿Cuándo ocurrió el hecho? <br></br>• ¿Qué sucedió?
                   </Typography>
                 </div>
               </Grid>
@@ -78,10 +97,19 @@ export default function SimplePaper() {
                     width="150px"
                     alt="clock"
                     className={classes.image}
-                  /><br></br>
+                  />
+                  <br></br>
                   <Typography variant="h6" align="center">
-                    1) Recibimos la denuncia<br></br> 2) Lo estamos investigando <br></br>3)
-                    Llegamos a la siguiente conclusión
+                    <br></br>Revisa el estatus de tu denuncia
+                  </Typography>
+                  <br></br>
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    style={{ fontSize: "16px", textAlign: "left" }}
+                  >
+                    1) Recibimos la denuncia<br></br> 2) Lo estamos investigando{" "}
+                    <br></br>3) Llegamos a la siguiente conclusión
                   </Typography>
                 </div>
               </Grid>
