@@ -55,7 +55,9 @@ const Review = ({ setForm, formData, navigation }) => {
         detalleCrimen {`${detalleCrimen}`}
       </div>
       <div>
-        <button onClick={() => setSubmit()}>Subir</button>
+        <button className="button-Form"  onClick={() => setSubmit()}>
+          Subir
+        </button>
       </div>
     </div>
   );

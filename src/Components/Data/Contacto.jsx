@@ -1,5 +1,6 @@
 import React from "react";
 import ItemForm from "./ItemForm";
+import { Typography } from "@material-ui/core";
 
 //DETALLE FORMULARIO DE CONTACTO
 const Contacto = ({ setForm, formData, navigation }) => {
@@ -9,12 +10,17 @@ const Contacto = ({ setForm, formData, navigation }) => {
 
   return (
     <div className="form">
-      <h3>Contácto </h3>
+      <Typography>Paso 2 de 3</Typography>
       <hr></hr>
+      <h3>Contácto </h3>
       <ItemForm label="E-mail" name="email" value={email} onChange={setForm} />
       <div>
-        <button onClick={previous}>Previo</button>
-        <button onClick={next}>Siguiente</button>
+        <button className="button-Form-1" onClick={previous}>
+          Previo
+        </button>
+        <button className="button-Form" onClick={next}>
+          Siguiente
+        </button>
       </div>
     </div>
   );

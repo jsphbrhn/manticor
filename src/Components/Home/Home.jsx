@@ -8,14 +8,14 @@ import AppBar from "../../Components/Modules/AppBar";
 import Objetivos from "./Objetivos";
 import Identidad from "./Identidad"
 import { Link } from "react-router-dom";
-
+import Proceso from "./Proceso"
 const backgroundImage =
-  "https://cdn.pixabay.com/photo/2017/02/12/14/00/justice-2060093_1280.jpg";
+  "https://raw.githubusercontent.com/Mariyselita/Imgs/master/img.png";
 
 const styles = (theme) => ({
   background: {
     backgroundImage: `url(${backgroundImage})`,
-    backgroundColor: "#7fc7d9",
+    backgroundColor: "#07a6ca",
     backgroundPosition: "center",
   },
   button: {
@@ -39,35 +39,43 @@ function Capa(props) {
     <div>
       <AppBar />
       <Layout backgroundClassName={classes.background}>
-        <Typography color="inherit" align="center" variant="h2" marked="center">
-          Manticor
-        </Typography>
-        <Typography
-          color="inherit"
-          align="center"
-          variant="h5"
-          className={classes.h5}
-        >
-          “Obtener justicia al denunciar un acto de corrupción asegurando su
-          integridad.”
-        </Typography>
-        <Link to="/formulario">
-          <Button
-            color="secondary"
-            variant="contained"
-            size="large"
-            className={classes.button}
-            component="a"
+        <div style={{paddingLeft: "45%"}}>
+          <Typography
+            color="inherit"
+            align="center"
+            variant="h2"
+            marked="center"
           >
-            DENUNCIA
-          </Button>
-        </Link>
-        <Typography variant="body2" color="inherit" className={classes.more}>
-          Descubre esta nueva experiencia
-        </Typography>
+            Manticor
+          </Typography>
+          <Typography
+            color="inherit"
+            align="center"
+            variant="h5"
+            className={classes.h5}
+          >
+            “Obtener justicia al denunciar un acto de corrupción asegurando su
+            integridad.”
+          </Typography>
+          <Link to="/formulario">
+            <Button
+              color="secondary"
+              variant="contained"
+              size="large"
+              className={classes.button}
+              component="a"
+            >
+              DENUNCIA
+            </Button>
+          </Link>
+          <Typography variant="body2" color="inherit" className={classes.more}>
+            Descubre esta nueva experiencia
+          </Typography>
+        </div>
       </Layout>
-      <Identidad/>
+      <Identidad />
       <Objetivos />
+      <Proceso />
     </div>
   );
 }

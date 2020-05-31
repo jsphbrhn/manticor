@@ -23,17 +23,21 @@ export default function SimplePaper() {
     <div className={classes.root}>
       <section className={classes.root}>
         <Container className={classes.container}>
-         
           <Typography
             variant="h4"
             marked="center"
             className={classes.title}
             component="h2"
-            style={{paddingTop: "2%", marginTop: "20px", marginBottom: "20px"}}
+            style={{
+              paddingTop: "2%",
+              marginTop: "20px",
+              marginBottom: "20px",
+            }}
           >
             Objetivos
           </Typography>
-          <div style={{paddingTop: "4%"}}>
+          
+          <div style={{ paddingTop: "4%" }}>
             <Grid container spacing={5}>
               <Grid item xs={12} md={4}>
                 <div className={classes.item}>
@@ -77,7 +81,6 @@ export default function SimplePaper() {
               </Grid>
             </Grid>
           </div>
-         
         </Container>
       </section>
     </div>

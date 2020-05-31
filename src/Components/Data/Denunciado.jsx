@@ -1,5 +1,6 @@
 import React from "react";
 import ItemForm from "./ItemForm";
+import { Typography } from "@material-ui/core";
 
 //DETALLE FORMULARIO DE LA PERSONA A QUIEN SE LE VA DENUNCIAR
 const Denunciado = ({ setForm, formData, navigation }) => {
@@ -14,6 +15,8 @@ const Denunciado = ({ setForm, formData, navigation }) => {
 
   return (
     <div className="form">
+      <Typography>Paso 3 de 3</Typography>
+      <hr></hr>
       <h3>¿A quién o qué denuncias?</h3>
       <hr></hr>
       <ItemForm
@@ -41,8 +44,12 @@ const Denunciado = ({ setForm, formData, navigation }) => {
         onChange={setForm}
       />
       <div>
-        <button onClick={previous}>Previo</button>
-        <button onClick={next}>Siguiente</button>
+        <button className="button-Form-1" onClick={previous}>
+          Previo
+        </button>
+        <button className="button-Form" onClick={next}>
+          Siguiente
+        </button>
       </div>
     </div>
   );

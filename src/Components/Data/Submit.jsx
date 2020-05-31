@@ -4,7 +4,10 @@ const Submit = ({ navigation }) => {
   return (
     <div>
       <h3>Gracias por ser parte del cambio.En breve recibirás información</h3>
-      Otra denuncia -> <button onClick={() => go("Nombre")}>Nueva</button>
+      Otra denuncia ->{" "}
+      <button className="button-Form" onClick={() => go("Nombre")}>
+        Nueva
+      </button>
     </div>
   );
 };

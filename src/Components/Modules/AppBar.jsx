@@ -25,11 +25,10 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar
-        position="static" 
-      >
-        <Toolbar style={{flexDirection: "row-reverse", backgroundColor: "#f60256"
-}}>
+      <AppBar position="static">
+        <Toolbar
+          style={{ flexDirection: "row-reverse", backgroundColor: "#ff7c19" }}
+        >
           <Button color="inherit">Seguimiento</Button>
           <Button color="inherit">Proceso</Button>
           <Button color="inherit">Objetivos</Button>
