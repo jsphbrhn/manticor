@@ -40,6 +40,8 @@ const Denunciado = ({ setForm, formData, navigation }) => {
       />
       <label>Descripción de los hechos</label>
       <TextareaAutosize
+      style={{marginLeft: "12px",height: "50px"}}
+      cols="25"
         aria-label="empty textarea"
         rowsMax={4}
         label="Detalle de los hechos"
