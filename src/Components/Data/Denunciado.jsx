@@ -1,6 +1,7 @@
 import React from "react";
 import ItemForm from "./ItemForm";
 import { Typography } from "@material-ui/core";
+import TextareaAutosize from "@material-ui/core/TextareaAutosize";
 
 //DETALLE FORMULARIO DE LA PERSONA A QUIEN SE LE VA DENUNCIAR
 const Denunciado = ({ setForm, formData, navigation }) => {
@@ -37,12 +38,21 @@ const Denunciado = ({ setForm, formData, navigation }) => {
         value={organizacionInvolucrada}
         onChange={setForm}
       />
-      <ItemForm
-        label="Detalle"
+      <label>Descripción de los hechos</label>
+      <TextareaAutosize
+        aria-label="empty textarea"
+        label="Detalle de los hechos"
         name="detalleCrimen"
         value={detalleCrimen}
         onChange={setForm}
       />
+      
+      {/* <ItemForm
+        label="Detalle de los hechos"
+        name="detalleCrimen"
+        value={detalleCrimen}
+        onChange={setForm}
+      /> */}
       <div>
         <button className="button-Form-1" onClick={previous}>
           Previo

@@ -10,7 +10,7 @@ const Nombres = ({ setForm, formData, navigation }) => {
 
   return (
     <div className="form">
-      <Typography style={{color: "white"}}>
+      <Typography style={{ color: "white" }}>
         <b>Paso 1 de 3</b>
       </Typography>
       <img
@@ -25,9 +25,14 @@ const Nombres = ({ setForm, formData, navigation }) => {
         src={require("../../Images/RecursoA.png")}
         alt="RecursoA"
       />
-
-      <div style={{ position: "absolute", bottom: "0", paddingBottom: "2%" }}>
-        <h3>Tu nombre anónimo</h3>
+      <Typography style={{ color: "white" }}>
+        <br></br>
+        <b>¡Hola!Permíteme ayudarte </b>
+      </Typography>
+      <div
+        style={{ position: "absolute", bottom: "100px", paddingBottom: "2%", }}
+      >
+        <h3 >Nickname</h3>
         <ItemForm
           label="Nickname"
           name="nickName"

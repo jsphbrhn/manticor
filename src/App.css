@@ -45,8 +45,9 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 50%;
-    height: 300px;
+    width: 260px;
+    min-width: 200px;
+    height: 400px;
     background-color: #07a6ca;
     /*border: 1px solid gray;*/
     padding-left: 4%;
@@ -84,11 +85,14 @@ select {
 
 .button-Form {
     padding: 12px;
-    background-color: white;
+    background-color: #ff7c19;
     margin: 12px;
     position: absolute;
     bottom: 0;
+    color: white;
+    font-weight: bold;
     right: 0;
+    border: none;
 }
 
 .Layout-backdrop-10 {
@@ -105,4 +109,8 @@ select {
 .MuiButton-containedSecondary {
     color: #fff;
     background-color:rgb(255, 124, 25) !important;
+}
+
+.Typography-markedH2Center-15 {
+    background-color: rgb(255, 124, 25) !important;
 }
