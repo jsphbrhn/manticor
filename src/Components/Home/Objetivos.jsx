@@ -34,6 +34,7 @@ export default function SimplePaper() {
             marked="center"
             className={classes.title}
             component="h2"
+            style={{paddingTop: "2%"}}
           >
             Objetivos
           </Typography>
@@ -47,7 +48,7 @@ export default function SimplePaper() {
                     alt="suitcase"
                     className={classes.image}
                   />
-                  <Typography variant="h5" align="center">
+                  <Typography variant="h6" align="center">
                     Fomentar la denuncia.
                   </Typography>
                 </div>
@@ -60,7 +61,7 @@ export default function SimplePaper() {
                     alt="graph"
                     className={classes.image}
                   />
-                  <Typography variant="h5" align="center">
+                  <Typography variant="h6" align="center">
                     Garantizar a los denunciantes una forma segura y anónima
                     para proteger su integridad.
                   </Typography>
@@ -74,7 +75,7 @@ export default function SimplePaper() {
                     alt="clock"
                     className={classes.image}
                   />
-                  <Typography variant="h5" align="center">
+                  <Typography variant="h6" align="center">
                     Seguir el proceso eficientemente.
                   </Typography>
                 </div>

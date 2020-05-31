@@ -1,5 +1,4 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import Button from "../../Components/Modules/Button";
@@ -7,6 +6,7 @@ import Typography from "../../Components/Modules/Typography";
 import Layout from "../../Components/Home/Layout";
 import AppBar from "../../Components/Modules/AppBar";
 import Objetivos from "./Objetivos";
+import { Link } from "react-router-dom";
 
 const backgroundImage =
   "https://cdn.pixabay.com/photo/2017/02/12/14/00/justice-2060093_1280.jpg";
@@ -34,7 +34,6 @@ const styles = (theme) => ({
 
 function Capa(props) {
   const { classes } = props;
-  const history = useHistory();
   return (
     <div>
       <AppBar />
@@ -51,23 +50,23 @@ function Capa(props) {
           “Obtener justicia al denunciar un acto de corrupción asegurando su
           integridad.”
         </Typography>
-        <Button
-          color="secondary"
-          variant="contained"
-          size="large"
-          className={classes.button}
-          component="a"
-          onClick={() => history.push("/formulario")}
-        >
-          DENUNCIA
-        </Button>
+        <Link to="/formulario">
+          <Button
+            color="secondary"
+            variant="contained"
+            size="large"
+            className={classes.button}
+            component="a"
+          >
+            DENUNCIA
+          </Button>
+        </Link>
         <Typography variant="body2" color="inherit" className={classes.more}>
           Descubre esta nueva experiencia
         </Typography>
       </Layout>
-    
-       <Objetivos/>
-     
+
+      <Objetivos />
     </div>
   );
 }

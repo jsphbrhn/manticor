@@ -1,7 +1,30 @@
 import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { useForm } from "react-hook-form";
+import Formulario from './Formulario';
 
-export default function () {
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    color: theme.palette.text.secondary,
+  },
+}));
+
+
+export default function() {
+  const classes = useStyles();
+   const { handleSubmit, register, errors } = useForm();
+   const onSubmit = (values) => console.log(values);
+
   return (
-    <p>HOLA</p>
+    <div>
+      <div className={classes.root}>
+        <Formulario />
+      </div>
+    </div>
   );
 }
