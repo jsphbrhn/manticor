@@ -1,5 +1,7 @@
 import React from "react";
-//DATOS FINALES A E ENVIAR 
+import { db } from "../../Firebase";
+
+//DATOS FINALES A E ENVIAR
 const Review = ({ setForm, formData, navigation }) => {
   const {
     email,
@@ -7,20 +9,36 @@ const Review = ({ setForm, formData, navigation }) => {
     nombreDenunciado,
     organizacionInvolucrada,
     entidadCrimen,
-    detalleCrimen
+    detalleCrimen,
   } = formData;
   const { go } = navigation;
-  const setSubmit=async ()=>{
-        console.log(formData);
-      // go("submit");
-  }
+  //INFORMACIÓN RELEVANTE QUE VA USAR FIREBASE
+  const setSubmit = async () => {
+    try {
+      const userKey = new Date().getTime().toString();
+      await db.collection("Usuario").doc(userKey).set({
+        email,
+        nickName,
+      });
+      await db.collection("Denuncia").doc(new Date().getTime().toString()).set({
+        nombreDenunciado,
+        organizacionInvolucrada,
+        entidadCrimen,
+        detalleCrimen,
+        userKey,
+      });
+      go("submit");
+    } catch (error) {
+      console.log(error);
+    }
+    console.log(formData);
+  };
 
   return (
     <div className="form">
       <h3>Revisar tu información</h3>
       <h4>Datos del denunciado</h4>
       <div>Nick Name: {`${nickName}`}</div>
-
       <div>
         e-mail: {`${email}`},
         <br />
