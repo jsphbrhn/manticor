@@ -30,6 +30,12 @@ En el lado del back se han manejado colecciones, se fueron creando 3 en firebase
 
 ### FRONTEND
 
+
+Del lado del front hemos usado para estilos CSS Material-UI y como framework maestro REACT.
+Se han realizado modificaciones al prototipo debido a ciertas sugerencias recibidas.
+
+![Usa firebase](https://raw.githubusercontent.com/Mariyselita/Imgs/master/Captura%20de%20Pantalla%202020-05-31%20a%20la(s)%2015.34.12.png)
+
 Documentación por defecto de Git:
 
 Este proyecto se inició con [Crear React App] (https://github.com/facebook/create-react-app).
